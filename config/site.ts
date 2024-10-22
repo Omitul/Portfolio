@@ -1,28 +1,41 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
+  name: "Portfolio",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
+    // {
+    //   label: "Omitul Islam",
+    //   href: "/",
+    // },
     {
-      label: "Home",
-      href: "/",
+      label: "Skills",
+      href: "/skills",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Education",
+      href: "/education",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Problem Solving",
+      href: "/problem-solving",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Projects",
+      href: "/projects",
+    },
+
+    {
+      label: "Blogs",
+      href: "/blogs",
     },
     {
-      label: "About",
-      href: "/about",
+      label: "Social",
+      href: "/social",
+    },
+    {
+      label: "Contact Me",
+      href: "/contact-me",
     },
   ],
   navMenuItems: [
@@ -59,11 +72,11 @@ export const siteConfig = {
       href: "/logout",
     },
   ],
-  links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
-  },
+  // links: {
+  //   github: "https://github.com/nextui-org/nextui",
+  //   twitter: "https://twitter.com/getnextui",
+  //   docs: "https://nextui.org",
+  //   discord: "https://discord.gg/9b6yyZKmH4",
+  //   sponsor: "https://patreon.com/jrgarciadev",
+  // },
 };

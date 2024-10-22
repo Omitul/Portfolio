@@ -17,15 +17,12 @@ export default function Error({
 
   return (
     <div>
-      <h2>Something went wrong!</h2>
-      <button
-        onClick={
-          // Attempt to recover by trying to re-render the segment
-          () => reset()
-        }
-      >
-        Try again
-      </button>
+      <h2 className="text-center text-2xl">Something went wrong!</h2>
+      <div className="flex items-center justify-center text-red-600">
+        <button className="text-2xl" onClick={() => reset()}>
+          Try again
+        </button>
+      </div>
     </div>
   );
 }
