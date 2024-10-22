@@ -6,7 +6,7 @@ const SocialCard = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl font-semibold mt-20 mb-5">
+        <h2 className="text-5xl font-medium mt-20 mb-5">
           {" "}
           Social Media Connections
         </h2>
