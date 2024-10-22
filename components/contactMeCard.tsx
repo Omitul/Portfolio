@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col gap-y-3">
+    <div id="contact" className="flex flex-col gap-y-3">
       <div className="gap-y-2">
         <h1 className="text-5xl mb-2">Contact Me</h1>
         <p className="text-2xl text-gray-500">
