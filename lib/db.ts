@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const MONGO_URL = process.env.MONGO_URL as string;
+const MONGO_URL = process.env.NEXT_PUBLIC_MONGO_URL as string;
 
 let connected: mongoose.Connection | null = null;
 

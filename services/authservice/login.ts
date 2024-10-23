@@ -2,13 +2,16 @@
 /* eslint-disable padding-line-between-statements */
 export const login = async (email: string, password: string) => {
   console.log("hellooooooooooooooooooooooo");
-  const response = await fetch("/api/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ email, password }),
-  });
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_API}/api/login`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, password }),
+    }
+  );
 
   if (!response.ok) {
     console.log("first");

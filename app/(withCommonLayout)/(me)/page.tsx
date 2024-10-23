@@ -7,19 +7,21 @@ import SkillSetCard from "@/components/skillSetCard";
 import EducationCard from "@/components/educationCard";
 import SocialCard from "@/components/socialCard";
 import ProblemSolvingCard from "@/components/problemSolvingCard";
+import ProjectShowCard from "@/components/projectShowCard";
+import IotProject from "@/components/IotProject";
 
 const DynamicLottieForIntro = dynamic(
   () => import("@/components/animationforintro"),
   {
     ssr: false,
-  },
+  }
 );
 
 const DynamicLottieForSkills = dynamic(
   () => import("@/components/animationForSkills"),
   {
     ssr: false,
-  },
+  }
 );
 
 const page = () => {
@@ -44,6 +46,9 @@ const page = () => {
 
       <SocialCard />
       <ProblemSolvingCard />
+
+      <ProjectShowCard />
+      <IotProject />
 
       <Contact />
     </div>

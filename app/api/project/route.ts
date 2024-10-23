@@ -33,3 +33,23 @@ export async function POST(request: Request) {
     );
   }
 }
+
+export async function GET() {
+  try {
+    await dbConnect();
+
+    const projects = await projectModel.find();
+
+    return NextResponse.json({
+      success: true,
+      message: "Projects fetched successfully",
+      data: projects,
+    });
+  } catch (error: any) {
+    console.error("Error fetching projects:", error);
+    return NextResponse.json(
+      { success: false, message: "Failed to fetch projects" },
+      { status: 500 }
+    );
+  }
+}
