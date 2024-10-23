@@ -5,9 +5,9 @@ import { NextResponse } from "next/server";
 import dbConnect from "@/lib/db";
 import { UserModel } from "@/models/user";
 
-// Rename this function to 'POST' to handle POST requests
+////ekhane post naam deya must, to handle post request, eta convention
 export async function POST(request: Request) {
-  const { email, password } = await request.json(); // Extract email and password from request body
+  const { email, password } = await request.json();
 
   await dbConnect();
 

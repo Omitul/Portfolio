@@ -20,8 +20,6 @@ export default function LoginForm() {
     e.preventDefault();
     setLoading(true);
     try {
-      console.log("responseeeeeeeeeeeeeeeeeeee");
-
       const response = await login(email, password);
       console.log(response);
 

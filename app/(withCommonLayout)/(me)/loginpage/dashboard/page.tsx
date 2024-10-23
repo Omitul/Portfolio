@@ -1,5 +1,11 @@
-const DashboardPage = () => {
-  return <div>DashboardPage</div>;
+import ProjectAdd from "@/components/addprojectCard";
+
+const Dashboard = () => {
+  return (
+    <div>
+      <ProjectAdd />
+    </div>
+  );
 };
 
-export default DashboardPage;
+export default Dashboard;
