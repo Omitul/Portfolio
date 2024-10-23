@@ -24,7 +24,7 @@ const LottieAnimation = () => {
     <div
       ref={animationContainer}
       className="flex justify-center items-center min-h-screen"
-    ></div>
+    />
   );
 };
 

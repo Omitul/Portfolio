@@ -14,35 +14,35 @@ const SocialCard = () => {
       <div className="flex flex-row justify-start gap-x-24">
         <div>
           <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-2 flex-col items-start"></CardHeader>
+            <CardHeader className="pb-0 pt-2 px-2 flex-col items-start" />
             <CardBody className="overflow-visible py-2">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl "
+                height={270}
                 src="https://i.postimg.cc/8cbgvsbq/Linked-In-logo-initials.png"
                 width={270}
-                height={270}
               />
             </CardBody>
             <Link
               className="font-serif text-center text-blue-600 cursor-pointer hover:text-blue-950"
               href=""
             >
-              Let's Connect
+              Let&apos;s Connect
             </Link>
           </Card>
         </div>
 
         <div>
           <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start"></CardHeader>
+            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start" />
             <CardBody className="overflow-visible py-2">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl"
+                height={270}
                 src="https://i.postimg.cc/vBqsmLJg/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution.webp"
                 width={270}
-                height={270}
               />
             </CardBody>
             <Link
@@ -56,14 +56,14 @@ const SocialCard = () => {
 
         <div>
           <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start"></CardHeader>
+            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start" />
             <CardBody className="overflow-visible py-2">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl"
+                height={270}
                 src="https://i.postimg.cc/WzzhYRfY/github-6980894-960-720.webp"
                 width={270}
-                height={270}
               />
             </CardBody>
             <Link

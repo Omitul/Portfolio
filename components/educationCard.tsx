@@ -9,11 +9,11 @@ const EducationCard = () => {
       <div className="flex flex-row gap-x-4 justify-start items-center mt-4">
         <div className="mt-3">
           <Image
-            src="https://i.postimg.cc/3Jsbh2Q9/Logo-of-Comilla-University.png"
             alt="University Logo"
-            width={100}
             height={100}
-          ></Image>
+            src="https://i.postimg.cc/3Jsbh2Q9/Logo-of-Comilla-University.png"
+            width={100}
+          />
         </div>
         <div>
           <h2 className="text-3xl font-semibold">Comilla University</h2>
@@ -27,11 +27,11 @@ const EducationCard = () => {
       <div className="flex flex-row gap-x-4 justify-start items-center mt-4">
         <div className="mt-3">
           <Image
-            src="https://i.postimg.cc/Fsxg2kmk/images.png"
             alt="University Logo"
-            width={100}
             height={100}
-          ></Image>
+            src="https://i.postimg.cc/Fsxg2kmk/images.png"
+            width={100}
+          />
         </div>
         <div>
           <h2 className="text-3xl font-semibold">Brahmanbaria Govt. College</h2>

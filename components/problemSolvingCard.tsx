@@ -15,14 +15,14 @@ const ProblemSolvingCard = () => {
       <div className="flex flex-row justify-start gap-x-24">
         <div>
           <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-2 flex-col items-start"></CardHeader>
+            <CardHeader className="pb-0 pt-2 px-2 flex-col items-start" />
             <CardBody className="overflow-visible py-2">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl "
+                height={270}
                 src="https://i.postimg.cc/R0G7NNXJ/zruiknbedz8yqafxbazb.webp"
                 width={270}
-                height={270}
               />
             </CardBody>
             <Link
@@ -36,14 +36,14 @@ const ProblemSolvingCard = () => {
 
         <div>
           <Card className="py-4">
-            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start"></CardHeader>
+            <CardHeader className="pb-0 pt-2 px-4 flex-col items-start" />
             <CardBody className="overflow-visible py-2">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl"
+                height={270}
                 src="https://i.postimg.cc/tTKNH8BB/Leet-Code-Sharing.png"
                 width={270}
-                height={270}
               />
             </CardBody>
             <Link

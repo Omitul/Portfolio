@@ -13,12 +13,12 @@ const Introcard = () => {
         | Expert in Data Structures, Algorithms & OOP | MERN
       </p>
       <Button
+        className="bg-blue-500 font-semibold"
         onClick={() => {
           document
             .getElementById("contact")
             ?.scrollIntoView({ behavior: "smooth" });
         }}
-        className="bg-blue-500 font-semibold"
       >
         CONTACT ME
       </Button>

@@ -1,6 +1,6 @@
 import React from "react";
-
 import dynamic from "next/dynamic";
+
 import Introcard from "@/components/introCard";
 import Contact from "@/components/contactMeCard";
 import SkillSetCard from "@/components/skillSetCard";
@@ -12,14 +12,14 @@ const DynamicLottieForIntro = dynamic(
   () => import("@/components/animationforintro"),
   {
     ssr: false,
-  }
+  },
 );
 
 const DynamicLottieForSkills = dynamic(
   () => import("@/components/animationForSkills"),
   {
     ssr: false,
-  }
+  },
 );
 
 const page = () => {
