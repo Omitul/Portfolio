@@ -2633,6 +2633,14 @@
   dependencies:
     tslib "^2.4.0"
 
+"@tinymce/tinymce-react@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@tinymce/tinymce-react/-/tinymce-react-5.1.1.tgz#3b8555ceaccfa6bb8bb03c3b0c8baaccde138bde"
+  integrity sha512-DQ0wpvnf/9z8RsOEAmrWZ1DN1PKqcQHfU+DpM3llLze7FHmxVtzuN8O+FYh0oAAF4stzAXwiCIVacfqjMwRieQ==
+  dependencies:
+    prop-types "^15.6.2"
+    tinymce "^7.0.0 || ^6.0.0 || ^5.5.1"
+
 "@tootallnate/once@2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
@@ -5893,7 +5901,7 @@ promisepipe@3.0.0:
   resolved "https://registry.yarnpkg.com/promisepipe/-/promisepipe-3.0.0.tgz#c9b6e5aa861ef5fcce6134f6f75e14f8f30bd3b2"
   integrity sha512-V6TbZDJ/ZswevgkDNpGt/YqNCiZP9ASfgU+p83uJE6NrGtvSGoOcHLiDCqkMs2+yg7F5qHdLV8d0aS8O26G/KA==
 
-prop-types@^15.8.1:
+prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -6576,6 +6584,11 @@ time-span@4.0.0:
   integrity sha512-MyqZCTGLDZ77u4k+jqg4UlrzPTPZ49NDlaekU6uuFaJLzPIN1woaRXCbGeqOfxwc3Y37ZROGAJ614Rdv7Olt+g==
   dependencies:
     convert-hrtime "^3.0.0"
+
+"tinymce@^7.0.0 || ^6.0.0 || ^5.5.1", tinymce@^7.4.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/tinymce/-/tinymce-7.4.1.tgz#cae3160a7d5850e3069d6d79625b1c74918f8af9"
+  integrity sha512-g1Ieaio5YU+jLEQZkQyxTT8EY/im+TC/CFBPlqDBCNdsF8YQOeLMot+K6vmFOAXhNc85KhP1rC9Dn2X+iBFDGg==
 
 to-regex-range@^5.0.1:
   version "5.0.1"

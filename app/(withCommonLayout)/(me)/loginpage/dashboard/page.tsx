@@ -1,4 +1,5 @@
 import ProjectAdd from "@/components/addprojectCard";
+import CreateBlog from "@/components/createBlog";
 import HandleUpdateDeleteProject from "@/components/modalUpdateDeleteProject";
 
 const Dashboard = () => {
@@ -6,6 +7,7 @@ const Dashboard = () => {
     <div>
       <ProjectAdd />
       <HandleUpdateDeleteProject />
+      <CreateBlog />
     </div>
   );
 };
