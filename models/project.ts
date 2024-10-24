@@ -4,6 +4,8 @@ type Tproject = {
   title: string;
   description: string;
   url: string;
+  image: string;
+  live_link: string;
 };
 
 const projectSchema = new Schema<Tproject>(
@@ -19,6 +21,12 @@ const projectSchema = new Schema<Tproject>(
     url: {
       type: String,
       required: true,
+    },
+    image: {
+      type: String,
+    },
+    live_link: {
+      type: String,
     },
   },
   {

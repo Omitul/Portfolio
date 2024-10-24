@@ -8,7 +8,7 @@ import { projectModel } from "@/models/project";
 
 export async function POST(request: Request) {
   try {
-    const { title, description, url } = await request.json();
+    const { title, description, url, image, live_link } = await request.json();
 
     await dbConnect();
 
@@ -16,6 +16,8 @@ export async function POST(request: Request) {
       title,
       description,
       url,
+      image,
+      live_link,
     });
 
     await newProject.save();

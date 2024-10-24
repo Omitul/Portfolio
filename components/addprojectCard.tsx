@@ -12,19 +12,23 @@ export default function ProjectAdd() {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [url, setUrl] = useState("");
+  const [image, setImage] = useState("");
+  const [live_link, setLive_link] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     try {
-      const projectData = { title, description, url };
+      const projectData = { title, description, url, image, live_link };
       const data = await ProjectPost(projectData);
       if (data.success) {
         toast.success(data.message);
         setTitle("");
         setDescription("");
         setUrl("");
+        setImage("");
+        setLive_link("");
       } else {
         toast.error(data.message);
       }
@@ -87,6 +91,38 @@ export default function ProjectAdd() {
             type="url"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-sm font-medium text-gray-700"
+            htmlFor="url"
+          >
+            Image Link
+          </label>
+          <input
+            required
+            className="mt-1 w-full p-3 border border-gray-300 rounded-lg"
+            id="image"
+            type="url"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+          />
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-sm font-medium text-gray-700"
+            htmlFor="url"
+          >
+            Live Link
+          </label>
+          <input
+            required
+            className="mt-1 w-full p-3 border border-gray-300 rounded-lg"
+            id="live_link"
+            type="url"
+            value={live_link}
+            onChange={(e) => setLive_link(e.target.value)}
           />
         </div>
         <button

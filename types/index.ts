@@ -8,5 +8,7 @@ export type Tproject = {
   _id?: string;
   title: string;
   description: string;
+  image: string;
   url: string;
+  live_link: string;
 };

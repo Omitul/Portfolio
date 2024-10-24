@@ -34,3 +34,40 @@ export const GetAllProjects = async () => {
 
   return data;
 };
+
+export const DeleteProject = async (id: string) => {
+  console.log("id", id);
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_API}/api/project/${id}`,
+    {
+      method: "DELETE",
+    }
+  );
+
+  if (!response.ok) {
+    const errorData = await response.json();
+    throw new Error(errorData.message || "Delete failed");
+  }
+
+  return await response.json();
+};
+
+export const UpdateProject = async (id: string, payload: any) => {
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_API}/api/project/${id}`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    }
+  );
+
+  if (!response.ok) {
+    const errorData = await response.json();
+    throw new Error(errorData.message || "Update failed");
+  }
+
+  return await response.json();
+};
