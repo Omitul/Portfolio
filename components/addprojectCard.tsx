@@ -3,7 +3,7 @@
 /* eslint-disable padding-line-between-statements */
 "use client";
 
-import { ProjectPost } from "@/services/projectservice/project";
+import { ProjectPost } from "@/services/projectservice";
 import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

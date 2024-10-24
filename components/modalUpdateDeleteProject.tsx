@@ -5,11 +5,8 @@ import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import Image from "next/image";
 
-import { GetAllProjects } from "@/services/projectservice/project"; // Import the service function
-import {
-  DeleteProject,
-  UpdateProject,
-} from "@/services/projectservice/project";
+import { GetAllProjects } from "@/services/projectservice"; // Import the service function
+import { DeleteProject, UpdateProject } from "@/services/projectservice";
 import {
   Modal,
   ModalContent,

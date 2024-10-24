@@ -2,7 +2,7 @@
 /* eslint-disable import/order */
 "use client";
 import { useEffect, useState } from "react";
-import { GetAllProjects } from "@/services/projectservice/project";
+import { GetAllProjects } from "@/services/projectservice";
 import Projects from "./projectcard";
 import { Tproject } from "@/types";
 
