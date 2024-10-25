@@ -5,9 +5,9 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Slide, ToastContainer, toast } from "react-toastify";
-
+import Cookies from "js-cookie";
 import "react-toastify/dist/ReactToastify.css";
-import { login } from "@/services/authservice/login";
+import { login } from "@/services/authservice";
 
 export default function LoginForm() {
   const [email, setEmail] = useState("");
@@ -24,6 +24,9 @@ export default function LoginForm() {
       console.log(response);
 
       if (response.success) {
+        const secretV = process.env.NEXT_PUBLIC_CV;
+        const secret = process.env.NEXT_PUBLIC_CN;
+        Cookies.set(secret as string, secretV as string, { expires: 7 });
         toast.success("Login successful!", {
           position: "top-center",
         });
