@@ -10,6 +10,11 @@
     opacity: 1;
   }
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }

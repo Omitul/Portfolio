@@ -1,7 +1,7 @@
 const SkillSetCard = () => {
   return (
     <div>
-      <div>
+      <div className="">
         <h1 className="text-2xl md:text-6xl font-semibold mb-2">Skills</h1>
         <p className="font-semibold md:text-xl font-serif text-pink-600 mb-4">
           Languages:

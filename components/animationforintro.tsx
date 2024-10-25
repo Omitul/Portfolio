@@ -23,7 +23,8 @@ const LottieAnimation = () => {
   return (
     <div
       ref={animationContainer}
-      className="flex justify-center items-center min-h-screen"
+      className="flex justify-center items-center w-full transform  md:scale-150"
+      style={{ transform: "scale(2.8)" }}
     />
   );
 };

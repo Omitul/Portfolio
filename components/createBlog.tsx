@@ -32,8 +32,10 @@ export default function CreateBlog() {
   };
 
   return (
-    <div className="mt-40">
-      <h2 className="text-3xl mb-6 font-semibold">Create a Blog...</h2>
+    <div className="mt-20 md:mt-40 p-10 md:p-5">
+      <h2 className="text-2xl md:text-3xl mb-6 font-semibold">
+        Create a Blog...
+      </h2>
       <form onSubmit={handleSubmit}>
         <input
           className="mr-2 border-2 border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"

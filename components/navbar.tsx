@@ -66,8 +66,8 @@ export const Navbar = () => {
         style={{
           position: "absolute",
           maxWidth: "200px",
-          maxHeight: "260px",
-          left: "400px",
+          maxHeight: "200px",
+          left: "200px",
         }}
       >
         <div className="mt-2 flex flex-col gap-2">

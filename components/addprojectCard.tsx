@@ -41,7 +41,7 @@ export default function ProjectAdd() {
 
   return (
     <div className="container mx-auto w-1/2">
-      <h1 className="text-2xl font-semibold text-center">Dashboard</h1>
+      <h1 className="text-2xl mt-10 font-semibold text-center">Dashboard</h1>
       <h4 className="text-xl font-serif font-semibold text-green-500 mt-5">
         Add New Project
       </h4>

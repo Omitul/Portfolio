@@ -30,16 +30,16 @@ const DynamicLottieForSkills = dynamic(
 const page = () => {
   return (
     <div>
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-row gap-x-3 md:gap-x-0 justify-center items-center mt-10 md:mt-20">
         <div id="intro">
           <Introcard />
         </div>
-        <div>
+        <div className="mb-4 md:mb-52">
           <DynamicLottieForIntro />
         </div>
       </div>
       <div
-        className="flex flex-col md:flex-row justify-center items-center"
+        className="flex flex-col md:flex-row  justify-center items-center mt-20"
         id="skills"
       >
         <DynamicLottieForSkills />

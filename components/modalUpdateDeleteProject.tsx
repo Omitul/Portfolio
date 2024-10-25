@@ -214,8 +214,10 @@ const HandleUpdateDeleteProject = () => {
 
   return (
     <div>
-      <h2 className="text-3xl font-medium mt-20 mb-5">Manage Projects</h2>
-      <div className="grid grid-cols-4 gap-y-2">
+      <h2 className="text-2xl md:text-3xl font-medium mt-20 px-10">
+        Manage Projects
+      </h2>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-y-2 p-10">
         {projects.map((project) => (
           <ModalUpdateAndDeleteProject key={project._id} project={project} />
         ))}
