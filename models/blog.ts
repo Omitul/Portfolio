@@ -1,12 +1,13 @@
 import { Schema, model } from "mongoose";
 
-type Tblog = {
+type blog = {
+  _id?: string;
   title: string;
   image: string;
   content: string;
 };
 
-const BlogSchema = new Schema<Tblog>(
+const BlogSchema = new Schema<blog>(
   {
     title: {
       type: String,
@@ -26,4 +27,6 @@ const BlogSchema = new Schema<Tblog>(
   }
 );
 
-export const BlogModel = model<Tblog>("Blog", BlogSchema);
+const BlogModel = model<blog>("Blog", BlogSchema);
+
+export default BlogModel;

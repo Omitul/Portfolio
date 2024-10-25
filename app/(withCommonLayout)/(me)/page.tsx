@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import dynamic from "next/dynamic";
 
@@ -9,6 +11,7 @@ import SocialCard from "@/components/socialCard";
 import ProblemSolvingCard from "@/components/problemSolvingCard";
 import ProjectShowCard from "@/components/projectShowCard";
 import IotProject from "@/components/IotProject";
+import BlogsShow from "@/components/blogShowCard";
 
 const DynamicLottieForIntro = dynamic(
   () => import("@/components/animationforintro"),
@@ -43,13 +46,11 @@ const page = () => {
       <div className="mb-4">
         <EducationCard />
       </div>
-
       <SocialCard />
       <ProblemSolvingCard />
-
       <ProjectShowCard />
       <IotProject />
-
+      <BlogsShow />
       <Contact />
     </div>
   );

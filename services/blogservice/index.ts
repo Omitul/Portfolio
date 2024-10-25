@@ -1,5 +1,8 @@
+"use client";
+
+import { Tblog } from "@/types";
 /* eslint-disable padding-line-between-statements */
-export const BlogPost = async (payload: any) => {
+export const BlogPost = async (payload: Tblog) => {
   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_API}/api/blog`, {
     method: "POST",
     headers: {
@@ -28,6 +31,20 @@ export const GetAllBlogs = async () => {
   }
   const data = await res.json();
   console.log(data);
+
+  return data;
+};
+
+export const GetSingleBlog = async (id: string) => {
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_API}/api/blog/${id}`,
+    {
+      method: "GET",
+      cache: "no-store",
+    }
+  );
+  const data = await res.json();
+  console.log("resssssssssssss", data);
 
   return data;
 };

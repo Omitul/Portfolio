@@ -1,8 +1,9 @@
 "use client";
-
 import { useState } from "react";
 import { Editor } from "@tinymce/tinymce-react";
 import { Button } from "@nextui-org/button";
+import { BlogPost } from "@/services/blogservice";
+import Swal from "sweetalert2";
 
 export default function CreateBlog() {
   const [title, setTitle] = useState("");
@@ -13,6 +14,21 @@ export default function CreateBlog() {
     e.preventDefault();
     const postData = { title, image: imageLink, content };
     console.log(postData);
+    const res = await BlogPost(postData);
+    if (res?.success) {
+      Swal.fire({
+        icon: "success",
+        text: "Blog Created Successfully",
+      });
+      setTitle("");
+      setContent("");
+      setImageLink("");
+    } else {
+      Swal.fire({
+        icon: "error",
+        text: "Failed to post the blog!",
+      });
+    }
   };
 
   return (
@@ -33,7 +49,7 @@ export default function CreateBlog() {
         />
 
         <Editor
-          apiKey="yem5b13sqbgc65jm35wqv6t56qmkd99veapzwcx84ctkddhp"
+          apiKey={process.env.NEXT_PUBLIC_API_KEY_TINYMCE}
           init={{
             height: 400,
             menubar: false,

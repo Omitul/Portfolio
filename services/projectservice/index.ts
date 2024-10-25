@@ -1,5 +1,7 @@
+import { Tproject } from "@/types";
+
 /* eslint-disable padding-line-between-statements */
-export const ProjectPost = async (payload: any) => {
+export const ProjectPost = async (payload: Tproject) => {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_API}/api/project`,
     {

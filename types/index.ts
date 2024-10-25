@@ -12,3 +12,10 @@ export type Tproject = {
   url: string;
   live_link: string;
 };
+
+export type Tblog = {
+  _id?: string;
+  title: string;
+  image: string;
+  content: string;
+};

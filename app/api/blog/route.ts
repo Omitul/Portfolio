@@ -4,7 +4,7 @@
 // eslint-disable-next-line import/order
 import { NextResponse } from "next/server";
 import dbConnect from "@/lib/db";
-import { BlogModel } from "@/models/blog";
+import BlogModel from "@/models/blog";
 
 export async function POST(request: Request) {
   try {
