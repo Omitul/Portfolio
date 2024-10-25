@@ -18,7 +18,7 @@ import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar className="w-full" maxWidth="full" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center" href="/">
@@ -32,7 +32,7 @@ export const Navbar = () => {
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "text-xl p-2 hover:font-bold  data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "text-xl p-2 hover:font-bold  data-[active=true]:text-primary data-[active=true]:font-medium"
                 )}
                 color="foreground"
                 href={item.href}
