@@ -10,7 +10,9 @@
     opacity: 1;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .animate-fade-in {
   animation: fade-in 2s forwards;
 }

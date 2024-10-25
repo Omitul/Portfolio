@@ -31,27 +31,39 @@ const page = () => {
   return (
     <div>
       <div className="flex flex-row justify-center items-center">
-        <div>
+        <div id="intro">
           <Introcard />
         </div>
         <div>
           <DynamicLottieForIntro />
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-row justify-center items-center" id="skills">
         <DynamicLottieForSkills />
         <SkillSetCard />
       </div>
 
-      <div className="mb-4">
+      <div className="mb-4" id="education">
         <EducationCard />
       </div>
-      <SocialCard />
-      <ProblemSolvingCard />
-      <ProjectShowCard />
-      <IotProject />
-      <BlogsShow />
-      <Contact />
+      <div id="social">
+        <SocialCard />
+      </div>
+      <div id="problem-solving">
+        <ProblemSolvingCard />
+      </div>
+      <div id="project-show">
+        <ProjectShowCard />
+      </div>
+      <div id="iot">
+        <IotProject />
+      </div>
+      <div id="blog-show">
+        <BlogsShow />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
     </div>
   );
 };

@@ -14,16 +14,14 @@ import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { Logo } from "@/components/icons";
-
+import { FaLaptopCode } from "react-icons/fa6";
 export const Navbar = () => {
   return (
     <NextUINavbar className="w-full" maxWidth="full" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="center">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
           <NextLink className="flex justify-start items-center" href="/">
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <FaLaptopCode />
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-4 justify-start ml-2 gap-x-20">

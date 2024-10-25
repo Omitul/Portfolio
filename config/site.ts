@@ -4,79 +4,65 @@ export const siteConfig = {
   name: "Portfolio",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
-    // {
-    //   label: "Omitul Islam",
-    //   href: "/",
-    // },
     {
       label: "Skills",
-      href: "/skills",
+      href: "#skills",
     },
     {
       label: "Education",
-      href: "/education",
+      href: "#education",
     },
     {
       label: "Problem Solving",
-      href: "/problem-solving",
+      href: "#problem-solving",
     },
     {
       label: "Projects",
-      href: "/projects",
+      href: "#project-show",
     },
 
     {
       label: "Blogs",
-      href: "/blogs",
+      href: "#blog-show",
     },
     {
       label: "Social",
-      href: "/social",
+      href: "#social",
     },
     {
       label: "Contact Me",
-      href: "/contact-me",
+      href: "#contact",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Skills",
+      href: "#skills",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Education",
+      href: "#education",
+    },
+    {
+      label: "Problem Solving",
+      href: "#problem-solving",
     },
     {
       label: "Projects",
-      href: "/projects",
+      href: "#project-show",
+    },
+
+    {
+      label: "Blogs",
+      href: "#blog-show",
     },
     {
-      label: "Team",
-      href: "/team",
+      label: "Social",
+      href: "#social",
     },
     {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contact Me",
+      href: "#contact",
     },
   ],
-  // links: {
-  //   github: "https://github.com/nextui-org/nextui",
-  //   twitter: "https://twitter.com/getnextui",
-  //   docs: "https://nextui.org",
-  //   discord: "https://discord.gg/9b6yyZKmH4",
-  //   sponsor: "https://patreon.com/jrgarciadev",
-  // },
 };
