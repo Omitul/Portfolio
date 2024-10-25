@@ -15,7 +15,9 @@ export default function IotProject() {
   return (
     <div>
       <div>
-        <h2 className="text-5xl font-medium mt-20 mb-5">IOT Project</h2>
+        <h2 className="text-2xl md:text-5xl font-medium mt-20 mb-5">
+          IOT Project
+        </h2>
       </div>
       <Card className="max-w-[500px]">
         <CardHeader className="flex gap-3">

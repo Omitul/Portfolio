@@ -38,7 +38,10 @@ const page = () => {
           <DynamicLottieForIntro />
         </div>
       </div>
-      <div className="flex flex-row justify-center items-center" id="skills">
+      <div
+        className="flex flex-col md:flex-row justify-center items-center"
+        id="skills"
+      >
         <DynamicLottieForSkills />
         <SkillSetCard />
       </div>

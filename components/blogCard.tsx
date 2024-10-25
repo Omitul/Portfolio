@@ -7,14 +7,14 @@ import parse from "html-react-parser";
 export default function BlogCard({ blog }: { blog: Tblog }) {
   const { image, title, content } = blog;
   return (
-    <Card className="max-w-[400px]">
+    <Card className="max-w-[500px]">
       <CardHeader>
         <div className="flex gap-5">
           <Avatar
             isBordered
             radius="full"
             size="md"
-            src="https://nextui.org/avatars/avatar-1.png"
+            src="https://i.postimg.cc/QtjQz37L/man-dummy.webp"
           />
           <div className="flex flex-col">
             <div className="flex flex-col gap-1 items-start justify-center">

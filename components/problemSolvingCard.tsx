@@ -7,16 +7,16 @@ const ProblemSolvingCard = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl font-medium mt-20 mb-5">
+        <h2 className="text-2xl md:text-5xl font-medium mt-20 mb-5">
           {" "}
           Problem Solving Activities
         </h2>
       </div>
-      <div className="flex flex-row justify-start gap-x-24">
+      <div className="flex flex-col md:flex-row justify-start gap-x-24">
         <div>
           <Card className="py-4">
             <CardHeader className="pb-0 pt-2 px-2 flex-col items-start" />
-            <CardBody className="overflow-visible py-2">
+            <CardBody className="overflow-visible py-2 px-20 md:px-10">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl "
@@ -37,7 +37,7 @@ const ProblemSolvingCard = () => {
         <div>
           <Card className="py-4">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start" />
-            <CardBody className="overflow-visible py-2">
+            <CardBody className="overflow-visible py-2 px-20 md:px-10">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl"

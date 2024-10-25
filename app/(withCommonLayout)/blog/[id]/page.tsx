@@ -27,7 +27,7 @@ export default function Blogpage() {
   if (!blog) return <p>Loading...</p>;
   return (
     <div>
-      <Card className="max-w-full p-10">
+      <Card className="max-w-full p-20 shadow-lg">
         <CardHeader className="justify-between">
           <div className="flex gap-5">
             <Avatar
@@ -43,23 +43,17 @@ export default function Blogpage() {
               <h5 className="text-small tracking-tight text-default-400">
                 fa6164781@gmail.com
               </h5>
-              <h2 className="mt-4 text-2xl font-serif font-bold mx-auto">
-                {blog.title}
-              </h2>
             </div>
           </div>
         </CardHeader>
+        <CardHeader>
+          <h2 className="mt-2 text-3xl font-serif font-bold">{blog.title}</h2>
+        </CardHeader>
         <CardBody className="px-3 py-0 text-small text-default-400">
           {blog.image && (
-            <Image
-              alt="image"
-              className="mx-auto"
-              height={300}
-              src={blog.image}
-              width={1000}
-            />
+            <Image alt="image" height={300} src={blog.image} width={1000} />
           )}
-          <p className="p-2 text-start  text-gray-600 px-16 text-xl">
+          <p className="p-2 text-start  text-gray-600  text-xl">
             {parse(blog.content)}
           </p>
         </CardBody>

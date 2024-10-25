@@ -12,7 +12,7 @@ import {
 export default function Projects({ project }: { project: Tproject }) {
   const { title, url, description, image, live_link } = project;
   return (
-    <Card className="max-w-[400px]">
+    <Card className="max-w-[500px]">
       <CardHeader className="flex gap-3">
         <div className="flex flex-col justify-center items-center mx-auto">
           <div className="flex flex-col">
@@ -20,15 +20,15 @@ export default function Projects({ project }: { project: Tproject }) {
               {title}
             </p>
           </div>
-          <div className="flex justify-center items-center max-w-full">
+          <CardBody className="overflow-visible py-2 px-20 md:px-10">
             <Image
-              alt="IOT project device pic"
+              alt="project pic"
               className="w-[800px] h-[300px] object-cover"
               height={200}
               src={image}
               width={400}
             />
-          </div>
+          </CardBody>
         </div>
       </CardHeader>
       <Divider />

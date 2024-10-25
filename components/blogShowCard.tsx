@@ -33,9 +33,9 @@ const BlogsShow = () => {
   return (
     <div>
       <div>
-        <h2 className="text-5xl font-medium mt-20 mb-5">Blogs</h2>
+        <h2 className="text-2xl md:text-5xl font-medium mt-20 mb-5">Blogs</h2>
       </div>
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {Blogs?.map((blog: Tblog) => (
           <BlogCard key={blog._id} blog={blog}></BlogCard>
         ))}

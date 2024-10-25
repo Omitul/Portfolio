@@ -15,16 +15,16 @@ const handleDownload = (e: React.MouseEvent) => {
 const Introcard = () => {
   return (
     <div className="gap-y-10">
-      <h1 className="text-7xl font-bold w-full mb-4">
+      <h1 className="text-3xl md:text-7xl font-bold w-full mb-4">
         Hi, I&apos;m Omitul Islam
       </h1>
-      <p className="text-3xl text-gray-500 mb-4">
+      <p className="text-medium md:text-3xl text-gray-500 mb-4">
         Problem Solver | Web Technology Enthusiast | 3* at codeshef (max: 1788)
         | Expert in Data Structures, Algorithms & OOP | MERN
       </p>
       <div className="flex flex-row gap-x-5 items-center">
         <Button
-          className="bg-blue-500 font-semibold"
+          className="bg-blue-500 font-semibold text-xs md:text-base px-3"
           onClick={() => {
             document
               .getElementById("contact")
@@ -34,7 +34,7 @@ const Introcard = () => {
           CONTACT ME
         </Button>
         <Button
-          className="bg-red-400 font-semibold hover:bg-red-500"
+          className="bg-red-400 font-semibold hover:bg-red-500 px-3 text-xs md:text-base"
           href=""
           onClick={handleDownload}
         >

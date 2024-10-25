@@ -5,8 +5,8 @@ const Contact = () => {
   return (
     <div className="flex flex-col gap-y-3 mt-20" id="contact">
       <div className="gap-y-2">
-        <h1 className="text-5xl mb-2">Contact Me</h1>
-        <p className="text-2xl text-gray-500">
+        <h1 className="text-2xl md:text-5xl mb-2">Contact Me</h1>
+        <p className="md:text-2xl text-gray-500">
           If you have any queries about me or want to hire me, feel free to
           knock me!
         </p>
