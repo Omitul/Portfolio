@@ -38,7 +38,7 @@ const Introcard = () => {
           href=""
           onClick={handleDownload}
         >
-          Resume
+          RESUME
         </Button>
       </div>
     </div>

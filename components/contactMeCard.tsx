@@ -27,9 +27,10 @@ const Contact = () => {
 
         <div className="flex items-center space-x-2 hover:opacity-80 cursor-pointer">
           <Image
+            className="rounded-full"
             alt="Facebook Logo"
             height={40}
-            src="https://i.postimg.cc/wjv053VD/2023-Facebook-icon.png"
+            src="https://i.postimg.cc/P5cTJ1Y6/image.png"
             width={40}
           />
           <Link
@@ -40,10 +41,11 @@ const Contact = () => {
 
         <div className="flex items-center space-x-2 hover:opacity-80 cursor-pointer">
           <Image
+            className="rounded-full"
             alt="Github Logo"
-            height={40}
-            src="https://i.postimg.cc/qvVvyC05/25231.png"
-            width={40}
+            height={43}
+            src="https://i.postimg.cc/LX278sCC/image.png"
+            width={43}
           />
           <Link
             className="text-lg font-semibold hover:underline"
@@ -66,10 +68,11 @@ const Contact = () => {
 
         <div className="flex items-center space-x-2 hover:opacity-80 cursor-pointer">
           <Image
+            className="rounded-3xl"
             alt="Twitter Logo"
-            height={46}
-            src="https://i.postimg.cc/1zFT6fmJ/twitter-logo-icon-voronezh-russia-november-round-blue-color-164586139.webp"
-            width={46}
+            height={44}
+            src="https://i.postimg.cc/YSYKSZp9/pngtree-twitter-social-media-icon-png-image-6315986.png"
+            width={44}
           />
           <Link
             className="text-lg font-semibold hover:underline"
