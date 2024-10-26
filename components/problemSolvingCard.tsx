@@ -27,7 +27,7 @@ const ProblemSolvingCard = () => {
             </CardBody>
             <Link
               className="font-serif text-center text-blue-600 cursor-pointer hover:text-blue-950"
-              href=""
+              href="https://www.codechef.com/users/jukerburg11"
             >
               Profile
             </Link>
@@ -48,7 +48,7 @@ const ProblemSolvingCard = () => {
             </CardBody>
             <Link
               className="font-serif text-center text-blue-600 cursor-pointer hover:text-blue-950"
-              href=""
+              href="https://leetcode.com/u/Omitul/"
             >
               Profile
             </Link>
