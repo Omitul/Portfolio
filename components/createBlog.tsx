@@ -51,7 +51,7 @@ export default function CreateBlog() {
         />
 
         <Editor
-          apiKey={process.env.NEXT_PUBLIC_API_KEY_TINYMCE}
+          // apiKey="yem5b13sqbgc65jm35wqv6t56qmkd99veapzwcx84ctkddhp"
           init={{
             height: 400,
             menubar: false,
@@ -65,6 +65,7 @@ export default function CreateBlog() {
               "alignleft aligncenter alignright alignjustify | " +
               "bullist numlist outdent indent | link image | code",
           }}
+          tinymceScriptSrc="/tinymce/tinymce.min.js"
           onEditorChange={(newValue) => setContent(newValue)}
         />
         <Button
