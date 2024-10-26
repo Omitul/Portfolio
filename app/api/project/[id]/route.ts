@@ -15,6 +15,7 @@ export async function PUT(
       { title, description, url },
       { new: true }
     );
+    console.log("updated project", updatedProject);
 
     return NextResponse.json({
       success: true,

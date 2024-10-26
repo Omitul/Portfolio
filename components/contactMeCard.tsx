@@ -21,7 +21,7 @@ const Contact = () => {
           />
           <Link
             className="text-lg font-semibold hover:bg-black"
-            href="mailto:your-email@example.com"
+            href="fa6164781@gmail.com"
           />
         </div>
 
@@ -35,7 +35,7 @@ const Contact = () => {
           />
           <Link
             className="text-lg font-semibold hover:underline"
-            href="mailto:your-email@example.com"
+            href="https://www.facebook.com/mdomitul.islam.56"
           />
         </div>
 
@@ -49,7 +49,7 @@ const Contact = () => {
           />
           <Link
             className="text-lg font-semibold hover:underline"
-            href="mailto:your-email@example.com"
+            href="https://github.com/Omitul"
           />
         </div>
 
@@ -62,7 +62,7 @@ const Contact = () => {
           />
           <Link
             className="text-lg font-semibold hover:underline"
-            href="mailto:your-email@example.com"
+            href="https://www.linkedin.com/in/omitul-islam?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           />
         </div>
 
@@ -76,7 +76,7 @@ const Contact = () => {
           />
           <Link
             className="text-lg font-semibold hover:underline"
-            href="mailto:your-email@example.com"
+            href="https://x.com/MR_OMI_?mx=2"
           />
         </div>
       </div>

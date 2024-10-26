@@ -54,7 +54,8 @@ export const DeleteProject = async (id: string) => {
   return await response.json();
 };
 
-export const UpdateProject = async (id: string, payload: any) => {
+export const UpdateProject = async (id: string, payload: Partial<Tproject>) => {
+  console.log("first,id", id);
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_API}/api/project/${id}`,
     {

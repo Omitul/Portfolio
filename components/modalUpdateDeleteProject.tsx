@@ -36,7 +36,10 @@ const ModalUpdateAndDeleteProject = ({ project }: { project: Tproject }) => {
 
   const handleUpdate = async () => {
     try {
-      const res = await UpdateProject(project._id as string, formData);
+      const res = await UpdateProject(
+        project._id as string,
+        formData as Partial<Tproject>
+      );
       onOpenChange();
       if (res.success) {
         setProject((prev) => ({
@@ -191,7 +194,7 @@ const ModalUpdateAndDeleteProject = ({ project }: { project: Tproject }) => {
 };
 
 const HandleUpdateDeleteProject = () => {
-  const [projects, setProjects] = useState<any[]>([]);
+  const [projects, setProjects] = useState<Tproject[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

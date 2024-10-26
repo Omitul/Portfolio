@@ -25,7 +25,7 @@ const SocialCard = () => {
             </CardBody>
             <Link
               className="font-serif text-center text-blue-600 cursor-pointer hover:text-blue-950"
-              href=""
+              href="https://www.linkedin.com/in/omitul-islam?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             >
               Let&apos;s Connect
             </Link>
@@ -46,7 +46,7 @@ const SocialCard = () => {
             </CardBody>
             <Link
               className="font-serif text-center text-blue-600 cursor-pointer hover:text-blue-950"
-              href=""
+              href="https://www.facebook.com/mdomitul.islam.56"
             >
               Profile
             </Link>
@@ -67,7 +67,7 @@ const SocialCard = () => {
             </CardBody>
             <Link
               className="font-serif text-center text-blue-600 cursor-pointer hover:text-blue-950"
-              href=""
+              href="https://github.com/Omitul"
             >
               Join me on GitHub!
             </Link>

@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 type Tproject = {
   title: string;
@@ -34,4 +34,5 @@ const projectSchema = new Schema<Tproject>(
   }
 );
 
-export const projectModel = model<Tproject>("Project", projectSchema);
+export const projectModel =
+  models.Project || model<Tproject>("Project", projectSchema);

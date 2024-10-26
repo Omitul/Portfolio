@@ -37,7 +37,7 @@ const ProjectShowCard = () => {
           Projects
         </h2>
       </div>
-      <div className="grid grid-col-1 md:grid-cols-3 gap-3">
+      <div className="grid grid-col-1 md:grid-cols-3 gap-3 md:gap-x-7">
         {projects?.map((project: Tproject) => (
           <Projects key={project._id} project={project}></Projects>
         ))}
