@@ -5,7 +5,7 @@ import { Button } from "@nextui-org/button";
 const handleDownload = (e: React.MouseEvent) => {
   e.preventDefault();
   const link = document.createElement("a");
-  link.href = "/resume/test.pdf";
+  link.href = "/resume/Resume_Omitul_CoU.pdf";
   link.download = "Resume_Omitul_CoU.pdf";
   document.body.appendChild(link);
   link.click();
