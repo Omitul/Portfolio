@@ -11,6 +11,17 @@
   }
 }
 
+.responsive-image {
+  width: 65px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .responsive-image {
+    width: 100px;
+  }
+}
+
 html,
 body {
   overflow-x: hidden;

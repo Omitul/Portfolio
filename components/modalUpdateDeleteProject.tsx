@@ -84,7 +84,9 @@ const ModalUpdateAndDeleteProject = ({ project }: { project: Tproject }) => {
 
   return (
     <div>
-      <h3 className="text-sky-950 text-2xl font-serif">{Project?.title}</h3>
+      <h3 className="text-sky-400 text-2xl font-serif font-semibold">
+        {Project?.title}
+      </h3>
       <Image
         alt="Image of the project"
         height={100}

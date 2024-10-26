@@ -14,7 +14,7 @@ const SocialCard = () => {
         <div>
           <Card className="py-4">
             <CardHeader className="pb-0 pt-2 px-2 flex-col items-start" />
-            <CardBody className="overflow-visible py-2 px-20 md:px-10">
+            <CardBody className="overflow-visible py-2 px-10">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl "
@@ -35,7 +35,7 @@ const SocialCard = () => {
         <div>
           <Card className="py-4">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start" />
-            <CardBody className="overflow-visible py-2 px-20 md:px-10">
+            <CardBody className="overflow-visible py-2 px-10">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl"
@@ -56,7 +56,7 @@ const SocialCard = () => {
         <div>
           <Card className="py-4">
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start" />
-            <CardBody className="overflow-visible py-2 px-20 md:px-10">
+            <CardBody className="overflow-visible py-2 px-10">
               <Image
                 alt="Card background"
                 className="object-cover rounded-xl"

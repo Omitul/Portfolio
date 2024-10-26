@@ -13,18 +13,21 @@ const LottieAnimation = () => {
         renderer: "svg",
         loop: true,
         autoplay: true,
-        path: "/animation/code.json",
+        path: "/animation/codeintro.json",
       });
 
       return () => animation.destroy();
     }
   }, []);
-
+  const getScaleStyle = () => {
+    if (window.innerWidth >= 767) return { transform: "scale(2.0)" };
+    return { transform: "scale(2.4)" };
+  };
   return (
     <div
       ref={animationContainer}
-      className="flex justify-center items-center w-full transform  md:scale-150"
-      style={{ transform: "scale(2.8)" }}
+      className="flex justify-center items-center w-full transform"
+      style={getScaleStyle()}
     />
   );
 };

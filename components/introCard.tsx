@@ -18,7 +18,7 @@ const Introcard = () => {
       <h1 className="text-2xl md:text-7xl font-bold mb-4">
         Hi, I&apos;m Omitul Islam
       </h1>
-      <p className="text-medium md:text-3xl text-gray-500 mb-4  md:w-3/4">
+      <p className="text-medium md:text-3xl text-gray-500 mb-4">
         Problem Solver | Web Technology Enthusiast | 3* at codeshef (max: 1788)
         | Expert in Data Structures, Algorithms & OOP | MERN
       </p>

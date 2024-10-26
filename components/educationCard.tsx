@@ -27,8 +27,9 @@ const EducationCard = () => {
       <div className="flex flex-row gap-x-4 justify-start items-center mt-4">
         <div className="mt-3">
           <Image
-            alt="University Logo"
-            height={100}
+            alt="college Logo"
+            className="rounded-full object-cover responsive-image"
+            height={50}
             src="https://i.postimg.cc/Fsxg2kmk/images.png"
             width={100}
           />

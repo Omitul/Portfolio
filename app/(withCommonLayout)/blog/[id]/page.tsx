@@ -27,7 +27,7 @@ export default function Blogpage() {
   if (!blog) return <p>Loading...</p>;
   return (
     <div>
-      <Card className="max-w-full p-20 shadow-lg">
+      <Card className="max-w-full p-4 md:p-20 shadow-lg">
         <CardHeader className="justify-between">
           <div className="flex gap-5">
             <Avatar

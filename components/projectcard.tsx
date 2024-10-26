@@ -20,7 +20,7 @@ export default function Projects({ project }: { project: Tproject }) {
               {title}
             </p>
           </div>
-          <CardBody className="overflow-visible py-2 px-20 md:px-10">
+          <CardBody className="overflow-visible py-2 px-10">
             <Image
               alt="project pic"
               className="w-[800px] h-[300px] object-cover"
